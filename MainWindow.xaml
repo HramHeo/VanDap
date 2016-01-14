@@ -1,0 +1,206 @@
+﻿<Window x:Class="_1312125.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" BorderBrush="#FF11FCFF" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="572" Width="738" MinWidth="590" MinHeight="550">
+    <Grid Name="Grid1">
+        <Grid Name="GridBC"  Margin="34,100,335,31" Background="Transparent" OpacityMask="#FF00FA00" MouseLeftButtonDown="GridBC_MouseLeftButtonDown">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="20*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--<Button Margin="0" Name="A1" Background="#28000000" Grid.Column="0" Grid.Row="11" Click="A1_Click" />
+            <Button Margin="0" Name="A3" Background="#28000000" Grid.Column="0" Grid.Row="9" Click="A3_Click" />
+            <Button Margin="0" Name="A5" Background="#28000000" Grid.Column="0" Grid.Row="7" Click="A5_Click" />
+            <Button Margin="0" Name="A7" Background="#28000000" Grid.Column="0" Grid.Row="5" Click="A7_Click" />
+            <Button Margin="0" Name="A9" Background="#28000000" Grid.Column="0" Grid.Row="3" Click="A9_Click" />
+            <Button Margin="0" Name="A11" Background="#28000000" Grid.Column="0" Grid.Row="1" Click="A11_Click" />
+            <Button Margin="0" Name="B2" Background="#28000000" Grid.Column="1" Grid.Row="10" Click="B2_Click" />
+            <Button Margin="0" Name="B4" Background="#28000000" Grid.Column="1" Grid.Row="8" Click="B4_Click" />
+            <Button Margin="0" Name="B6" Background="#28000000" Grid.Column="1" Grid.Row="6" Click="B6_Click" />
+            <Button Margin="0" Name="B8" Background="#28000000" Grid.Column="1" Grid.Row="4" Click="B8_Click" />
+            <Button Margin="0" Name="B10" Background="#28000000" Grid.Column="1" Grid.Row="2" Click="B10_Click" />
+            <Button Margin="0" Name="B12" Background="#28000000" Grid.Column="1" Grid.Row="0" Click="B12_Click" />
+            <Button Margin="0" Name="C1"  Background="#28000000" Grid.Column="2" Grid.Row="11" Click="C1_Click" />
+            <Button Margin="0" Name="C3"  Background="#28000000" Grid.Column="2" Grid.Row="9" Click="C3_Click" />
+            <Button Margin="0" Name="C5"  Background="#28000000" Grid.Column="2" Grid.Row="7" Click="C5_Click" />
+            <Button Margin="0" Name="C7"  Background="#28000000" Grid.Column="2" Grid.Row="5" Click="C7_Click" />
+            <Button Margin="0" Name="C9"  Background="#28000000" Grid.Column="2" Grid.Row="3" Click="C9_Click" />
+            <Button Margin="0" Name="C11" Background="#28000000" Grid.Column="2" Grid.Row="1" Click="C11_Click" />
+            <Button Margin="0" Name="D2"  Background="#28000000" Grid.Column="3" Grid.Row="10" Click="D2_Click" />
+            <Button Margin="0" Name="D4"  Background="#28000000" Grid.Column="3" Grid.Row="8" Click="D4_Click" />
+            <Button Margin="0" Name="D6"  Background="#28000000" Grid.Column="3" Grid.Row="6" Click="D6_Click" />
+            <Button Margin="0" Name="D8"  Background="#28000000" Grid.Column="3" Grid.Row="4" Click="D8_Click" />
+            <Button Margin="0" Name="D10" Background="#28000000" Grid.Column="3" Grid.Row="2" Click="D10_Click" />
+            <Button Margin="0" Name="D12" Background="#28000000" Grid.Column="3" Grid.Row="0" Click="D12_Click" />
+            <Button Margin="0" Name="E1"  Background="#28000000" Grid.Column="4" Grid.Row="11" Click="E1_Click" />
+            <Button Margin="0" Name="E3"  Background="#28000000" Grid.Column="4" Grid.Row="9" Click="E3_Click" />
+            <Button Margin="0" Name="E5"  Background="#28000000" Grid.Column="4" Grid.Row="7" Click="E5_Click" />
+            <Button Margin="0" Name="E7"  Background="#28000000" Grid.Column="4" Grid.Row="5" Click="E7_Click" />
+            <Button Margin="0" Name="E9"  Background="#28000000" Grid.Column="4" Grid.Row="3" Click="E9_Click" />
+            <Button Margin="0" Name="E11" Background="#28000000" Grid.Column="4" Grid.Row="1" Click="E11_Click" />
+            <Button Margin="0" Name="F2"  Background="#28000000" Grid.Column="5" Grid.Row="10" Click="F2_Click" />
+            <Button Margin="0" Name="F4"  Background="#28000000" Grid.Column="5" Grid.Row="8" Click="F4_Click" />
+            <Button Margin="0" Name="F6"  Background="#28000000" Grid.Column="5" Grid.Row="6" Click="F6_Click" />
+            <Button Margin="0" Name="F8"  Background="#28000000" Grid.Column="5" Grid.Row="4" Click="F8_Click" />
+            <Button Margin="0" Name="F10" Background="#28000000" Grid.Column="5" Grid.Row="2" Click="F10_Click" />
+            <Button Margin="0" Name="F12" Background="#28000000" Grid.Column="5" Grid.Row="0" Click="F12_Click" />
+            <Button Margin="0" Name="G1"  Background="#28000000" Grid.Column="6" Grid.Row="11" Click="G1_Click" />
+            <Button Margin="0" Name="G3"  Background="#28000000" Grid.Column="6" Grid.Row="9" Click="G3_Click" />
+            <Button Margin="0" Name="G5"  Background="#28000000" Grid.Column="6" Grid.Row="7" Click="G5_Click" />
+            <Button Margin="0" Name="G7"  Background="#28000000" Grid.Column="6" Grid.Row="5" Click="G7_Click" />
+            <Button Margin="0" Name="G9"  Background="#28000000" Grid.Column="6" Grid.Row="3" Click="G9_Click" />
+            <Button Margin="0" Name="G11" Background="#28000000" Grid.Column="6" Grid.Row="1" Click="G11_Click" />
+            <Button Margin="0" Name="H2"  Background="#28000000" Grid.Column="7" Grid.Row="10" Click="H2_Click" />
+            <Button Margin="0" Name="H4"  Background="#28000000" Grid.Column="7" Grid.Row="8" Click="H4_Click" />
+            <Button Margin="0" Name="H6"  Background="#28000000" Grid.Column="7" Grid.Row="6" Click="H6_Click" />
+            <Button Margin="0" Name="H8"  Background="#28000000" Grid.Column="7" Grid.Row="4" Click="H8_Click" />
+            <Button Margin="0" Name="H10" Background="#28000000" Grid.Column="7" Grid.Row="2" Click="H10_Click" />
+            <Button Margin="0" Name="H12" Background="#28000000" Grid.Column="7" Grid.Row="0" Click="H12_Click" />
+            <Button Margin="0" Name="I1"  Background="#28000000" Grid.Column="8" Grid.Row="11" Click="I1_Click" />
+            <Button Margin="0" Name="I3"  Background="#28000000" Grid.Column="8" Grid.Row="9" Click="I3_Click" />
+            <Button Margin="0" Name="I5"  Background="#28000000" Grid.Column="8" Grid.Row="7" Click="I5_Click" />
+            <Button Margin="0" Name="I7"  Background="#28000000" Grid.Column="8" Grid.Row="5" Click="I7_Click" />
+            <Button Margin="0" Name="I9"  Background="#28000000" Grid.Column="8" Grid.Row="3" Click="I9_Click" />
+            <Button Margin="0" Name="I11" Background="#28000000" Grid.Column="8" Grid.Row="1" Click="I11_Click" />
+            <Button Margin="0" Name="J2"  Background="#28000000" Grid.Column="9" Grid.Row="10" Click="J2_Click" />
+            <Button Margin="0" Name="J4"  Background="#28000000" Grid.Column="9" Grid.Row="8" Click="J4_Click" />
+            <Button Margin="0" Name="J6"  Background="#28000000" Grid.Column="9" Grid.Row="6" Click="J6_Click" />
+            <Button Margin="0" Name="J8"  Background="#28000000" Grid.Column="9" Grid.Row="4" Click="J8_Click" />
+            <Button Margin="0" Name="J10" Background="#28000000" Grid.Column="9" Grid.Row="2" Click="J10_Click" />
+            <Button Margin="0" Name="J12" Background="#28000000" Grid.Column="9" Grid.Row="0" Click="J12_Click" />
+            <Button Margin="0" Name="K1"  Background="#28000000" Grid.Column="10" Grid.Row="11" Click="K1_Click" />
+            <Button Margin="0" Name="K3"  Background="#28000000" Grid.Column="10" Grid.Row="9" Click="K3_Click" />
+            <Button Margin="0" Name="K5"  Background="#28000000" Grid.Column="10" Grid.Row="7" Click="K5_Click" />
+            <Button Margin="0" Name="K7"  Background="#28000000" Grid.Column="10" Grid.Row="5" Click="K7_Click" />
+            <Button Margin="0" Name="K9"  Background="#28000000" Grid.Column="10" Grid.Row="3" Click="K9_Click" />
+            <Button Margin="0" Name="K11" Background="#28000000" Grid.Column="10" Grid.Row="1" Click="K11_Click" />
+            <Button Margin="0" Name="L2"  Background="#28000000" Grid.Column="11" Grid.Row="10" Click="L2_Click" />
+            <Button Margin="0" Name="L4"  Background="#28000000" Grid.Column="11" Grid.Row="8" Click="L4_Click" />
+            <Button Margin="0" Name="L6"  Background="#28000000" Grid.Column="11" Grid.Row="6" Click="L6_Click" />
+            <Button Margin="0" Name="L8"  Background="#28000000" Grid.Column="11" Grid.Row="4" Click="L8_Click" />
+            <Button Margin="0" Name="L10" Background="#28000000" Grid.Column="11" Grid.Row="2" Click="L10_Click" />
+            <Button Margin="0" Name="L12" Background="#28000000" Grid.Column="11" Grid.Row="0" Click="L12_Click" />
+            
+            <Button Margin="0" Name="A2" Background="white" Grid.Column="0" Grid.Row="10" Click="A2_Click" />
+            <Button Margin="0" Name="A4" Background="white" Grid.Column="0" Grid.Row="8" Click="A4_Click" />
+            <Button Margin="0" Name="A6" Background="white" Grid.Column="0" Grid.Row="6" Click="A6_Click" />
+            <Button Margin="0" Name="A8" Background="white" Grid.Column="0" Grid.Row="4" Click="A8_Click" />
+            <Button Margin="0" Name="A10" Background="white" Grid.Column="0" Grid.Row="2" Click="A10_Click" />
+            <Button Margin="0" Name="A12" Background="white" Grid.Column="0" Grid.Row="0" Click="A12_Click" />
+            <Button Margin="0" Name="B1"  Background="white" Grid.Column="1" Grid.Row="11" Click="B1_Click" />
+            <Button Margin="0" Name="B3"  Background="white" Grid.Column="1" Grid.Row="9" Click="B3_Click" />
+            <Button Margin="0" Name="B5"  Background="white" Grid.Column="1" Grid.Row="7" Click="B5_Click" />
+            <Button Margin="0" Name="B7"  Background="white" Grid.Column="1" Grid.Row="5" Click="B7_Click" />
+            <Button Margin="0" Name="B9"  Background="white" Grid.Column="1" Grid.Row="3" Click="B9_Click" />
+            <Button Margin="0" Name="B11" Background="white" Grid.Column="1" Grid.Row="1" Click="B11_Click" />
+            <Button Margin="0" Name="C2"  Background="white" Grid.Column="2" Grid.Row="10" Click="C2_Click" />
+            <Button Margin="0" Name="C4"  Background="white" Grid.Column="2" Grid.Row="8" Click="C4_Click" />
+            <Button Margin="0" Name="C6"  Background="white" Grid.Column="2" Grid.Row="6" Click="C6_Click" />
+            <Button Margin="0" Name="C8"  Background="white" Grid.Column="2" Grid.Row="4" Click="C8_Click" />
+            <Button Margin="0" Name="C10" Background="white" Grid.Column="2" Grid.Row="2" Click="C10_Click" />
+            <Button Margin="0" Name="C12" Background="white" Grid.Column="2" Grid.Row="0" Click="C12_Click" />
+            <Button Margin="0" Name="D1"  Background="white" Grid.Column="3" Grid.Row="11" Click="D1_Click" />
+            <Button Margin="0" Name="D3"  Background="white" Grid.Column="3" Grid.Row="9" Click="D3_Click" />
+            <Button Margin="0" Name="D5"  Background="white" Grid.Column="3" Grid.Row="7" Click="D5_Click" />
+            <Button Margin="0" Name="D7"  Background="white" Grid.Column="3" Grid.Row="5" Click="D7_Click" />
+            <Button Margin="0" Name="D9"  Background="white" Grid.Column="3" Grid.Row="3" Click="D9_Click" />
+            <Button Margin="0" Name="D11" Background="white" Grid.Column="3" Grid.Row="1" Click="D11_Click" />
+            <Button Margin="0" Name="E2"  Background="white" Grid.Column="4" Grid.Row="10" Click="E2_Click" />
+            <Button Margin="0" Name="E4"  Background="white" Grid.Column="4" Grid.Row="8" Click="E4_Click" />
+            <Button Margin="0" Name="E6"  Background="white" Grid.Column="4" Grid.Row="6" Click="E6_Click" />
+            <Button Margin="0" Name="E8"  Background="white" Grid.Column="4" Grid.Row="4" Click="E8_Click" />
+            <Button Margin="0" Name="E10" Background="white" Grid.Column="4" Grid.Row="2" Click="E10_Click" />
+            <Button Margin="0" Name="E12" Background="white" Grid.Column="4" Grid.Row="0" Click="E12_Click" />
+            <Button Margin="0" Name="F1"  Background="white" Grid.Column="5" Grid.Row="11" Click="F1_Click" />
+            <Button Margin="0" Name="F3"  Background="white" Grid.Column="5" Grid.Row="9" Click="F3_Click" />
+            <Button Margin="0" Name="F5"  Background="white" Grid.Column="5" Grid.Row="7" Click="F5_Click" />
+            <Button Margin="0" Name="F7"  Background="white" Grid.Column="5" Grid.Row="5" Click="F7_Click" />
+            <Button Margin="0" Name="F9"  Background="white" Grid.Column="5" Grid.Row="3" Click="F9_Click" />
+            <Button Margin="0" Name="F11" Background="white" Grid.Column="5" Grid.Row="1" Click="F11_Click" />
+            <Button Margin="0" Name="G2"  Background="white" Grid.Column="6" Grid.Row="10" Click="G2_Click" />
+            <Button Margin="0" Name="G4"  Background="white" Grid.Column="6" Grid.Row="8" Click="G4_Click" />
+            <Button Margin="0" Name="G6"  Background="white" Grid.Column="6" Grid.Row="6" Click="G6_Click" />
+            <Button Margin="0" Name="G8"  Background="white" Grid.Column="6" Grid.Row="4" Click="G8_Click" />
+            <Button Margin="0" Name="G10" Background="white" Grid.Column="6" Grid.Row="2" Click="G10_Click" />
+            <Button Margin="0" Name="G12" Background="white" Grid.Column="6" Grid.Row="0" Click="G12_Click" />
+            <Button Margin="0" Name="H1"  Background="white" Grid.Column="7" Grid.Row="11" Click="H1_Click" />
+            <Button Margin="0" Name="H3"  Background="white" Grid.Column="7" Grid.Row="9" Click="H3_Click" />
+            <Button Margin="0" Name="H5"  Background="white" Grid.Column="7" Grid.Row="7" Click="H5_Click" />
+            <Button Margin="0" Name="H7"  Background="white" Grid.Column="7" Grid.Row="5" Click="H7_Click" />
+            <Button Margin="0" Name="H9"  Background="white" Grid.Column="7" Grid.Row="3" Click="H9_Click" />
+            <Button Margin="0" Name="H11" Background="white" Grid.Column="7" Grid.Row="1" Click="H11_Click" />
+            <Button Margin="0" Name="I2"  Background="white" Grid.Column="8" Grid.Row="10" Click="I2_Click" />
+            <Button Margin="0" Name="I4"  Background="white" Grid.Column="8" Grid.Row="8" Click="I4_Click" />
+            <Button Margin="0" Name="I6"  Background="white" Grid.Column="8" Grid.Row="6" Click="I6_Click" />
+            <Button Margin="0" Name="I8"  Background="white" Grid.Column="8" Grid.Row="4" Click="I8_Click" />
+            <Button Margin="0" Name="I10" Background="white" Grid.Column="8" Grid.Row="2" Click="I10_Click" />
+            <Button Margin="0" Name="I12" Background="white" Grid.Column="8" Grid.Row="0" Click="I12_Click" />
+            <Button Margin="0" Name="J1"  Background="white" Grid.Column="9" Grid.Row="11" Click="J1_Click" />
+            <Button Margin="0" Name="J3"  Background="white" Grid.Column="9" Grid.Row="9" Click="J3_Click" />
+            <Button Margin="0" Name="J5"  Background="white" Grid.Column="9" Grid.Row="7" Click="J5_Click" />
+            <Button Margin="0" Name="J7"  Background="white" Grid.Column="9" Grid.Row="5" Click="J7_Click" />
+            <Button Margin="0" Name="J9"  Background="white" Grid.Column="9" Grid.Row="3" Click="J9_Click" />
+            <Button Margin="0" Name="J11" Background="white" Grid.Column="9" Grid.Row="1" Click="J11_Click" />
+            <Button Margin="0" Name="K2"  Background="white" Grid.Column="10" Grid.Row="10" Click="K2_Click" />
+            <Button Margin="0" Name="K4"  Background="white" Grid.Column="10" Grid.Row="8" Click="K4_Click" />
+            <Button Margin="0" Name="K6"  Background="white" Grid.Column="10" Grid.Row="6" Click="K6_Click" />
+            <Button Margin="0" Name="K8"  Background="white" Grid.Column="10" Grid.Row="4" Click="K8_Click" />
+            <Button Margin="0" Name="K10" Background="white" Grid.Column="10" Grid.Row="2" Click="K10_Click" />
+            <Button Margin="0" Name="K12" Background="white" Grid.Column="10" Grid.Row="0" Click="K12_Click" />
+            <Button Margin="0" Name="L1"  Background="white" Grid.Column="11" Grid.Row="11" Click="L1_Click" />
+            <Button Margin="0" Name="L3"  Background="white" Grid.Column="11" Grid.Row="9" Click="L3_Click" />
+            <Button Margin="0" Name="L5"  Background="white" Grid.Column="11" Grid.Row="7" Click="L5_Click" />
+            <Button Margin="0" Name="L7"  Background="white" Grid.Column="11" Grid.Row="5" Click="L7_Click" />
+            <Button Margin="0" Name="L9"  Background="white" Grid.Column="11" Grid.Row="3" Click="L9_Click" />
+            <Button Margin="0" Name="L11" Background="white" Grid.Column="11" Grid.Row="1" Click="L11_Click" />-->
+
+        </Grid>
+        <Viewbox
+            Margin="4,4,4,0" Height="63" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <TextBlock
+                Text="Gomoku - Five in a row - multiplayer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#19000000">
+            </TextBlock>
+        </Viewbox>
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,89,100,0" Name="NameBox" VerticalAlignment="Top" Width="120" Text="Guest" Foreground="#BA000000" />
+        <Label Content="Your name:" Margin="0,89,224,0" Name="label1" HorizontalAlignment="Right" Width="70" Height="28" VerticalAlignment="Top" />
+        <Button Content="Change!" Height="23" Margin="0,89,14,0" Name="Change" VerticalAlignment="Top" BorderBrush="#FF0000A0" HorizontalAlignment="Right" Width="75" Click="Change_Click" />
+
+        <DockPanel  Margin="0,130,5,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="300"></DockPanel>
+        <Button Content="Send" Name="Send" Width="60" HorizontalAlignment="Right" Canvas.Left="0" Canvas.Top="404" Margin="0,477,62,0" Height="25" VerticalAlignment="Top" Background="#FFFFAD00" Foreground="White" FontWeight="Bold" BorderBrush="#FFB7B7B7" FontSize="14" Click="Send_Click" />
+        <TextBox Name="ChatBox" Canvas.Left="128" Canvas.Top="177" Margin="0,477,117,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Right" Width="175" OpacityMask="#FFEA0000" Background="White" BorderBrush="#FFB7B7B7" FontSize="14" />
+        <TextBox IsReadOnly="True" VerticalScrollBarVisibility="Visible" Height="314" HorizontalAlignment="Right" Margin="0,153,5,0" Name="ListChat" VerticalAlignment="Top" Width="300" />
+        <WrapPanel Background="#B90000FF" Height="30" Margin="0,124,5,0" HorizontalAlignment="Right" Width="300" VerticalAlignment="Top">
+            <Label Content="Chat/History:" Margin="5,0,0,0" Name="label2" Foreground="White" />
+        </WrapPanel>
+        <Border BorderBrush="#FF0024FF" BorderThickness="1" Height="388" Margin="0,124,5,0" Name="border1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="300" />
+        <Button Content="PvP" Height="23" HorizontalAlignment="Left" Margin="0,71,0,0" Name="PvP_btn" VerticalAlignment="Top" Width="75" Click="PvP_btn_Click" />
+        <Button Content="PvB" Height="23" HorizontalAlignment="Left" Margin="90,71,0,0" Name="PvB_btn" VerticalAlignment="Top" Width="75" Click="PvB_btn_Click" />
+        <Button Content="Online" Height="23" HorizontalAlignment="Left" Margin="180,71,0,0" Name="Play_online" VerticalAlignment="Top" Width="75" Click="Play_online_Click" />
+        <Border BorderBrush="Black" BorderThickness="3" Name="border2" Margin="34,100,335,31" />
+    </Grid>
+</Window>
